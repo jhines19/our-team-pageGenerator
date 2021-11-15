@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateHTML = require('./js/makeHTML');
+const generateHTML = require('./js/generateHTML');
 
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
@@ -223,7 +223,7 @@ function managerPrompt (){
             }
             
             const writeFile = data => {
-                fs.writeFile('../sample/index.html', data, err => {
+                fs.writeFile('./sample/index.html', data, err => {
                     // if there is an error 
                     if (err) {
                         console.log(err);
