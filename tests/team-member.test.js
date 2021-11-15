@@ -46,3 +46,5 @@ describe ('TeamMember', () => {
         })
     })
 })
+
+//to-do: write tests for other objects
